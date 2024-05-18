@@ -1,0 +1,457 @@
+body {
+    background-color: yellow;
+}
+
+.container-nav {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+ul {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding: 0;
+   
+}
+
+li>a {
+    padding: 8px 24px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+ul li:hover a {
+    transform: scale(1.2);
+}
+
+.button-menu-toggle {
+    display: none;
+}
+.button-menu-toggle1{
+    display: none;
+}
+
+main {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* Permitir que los elementos se envuelvan cuando no hay suficiente espacio */
+    justify-content: center;
+    /* Centrar los elementos horizontalmente */
+    gap: 20px;
+    /* Espacio entre los elementos */
+    background-color: fuchsia;
+}
+
+.feature-card {
+    
+    width: 300px;
+    /* Ancho de cada tarjeta */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card img {
+    max-width: 100%;
+    /* Asegurar que la imagen no exceda el ancho de la tarjeta */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.ima {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+}
+
+.ima img {
+    width: 30%;
+    height: 350px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+section {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20%;
+    max-width: 60%;
+}
+
+.section1 {
+    display: flex;
+    text-align: left;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.section3 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.section3 a {
+    color: #3782c8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section3 a:hover {
+    color: #2b669a;
+}
+
+footer {
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+
+    text-align: left;
+}
+
+.footer-social {
+
+    text-align: left;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-map {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contacto {
+    width: 50%;
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+}
+#contacto textarea {
+    width: 100%; /* O el porcentaje que desees */
+}
+.servicios {
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicios li {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.servicios img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.servicios li:hover img {
+    transform: scale(1.1);
+}
+
+.scroll-top-btn {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.scroll-top-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.scroll-top-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablet */
+    .container-nav {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 400px;
+        background-color: yellow;
+        padding-top: 50px;
+        width: 200px;
+        box-sizing: border-box;
+        z-index: 100;
+        overflow-y: auto;
+        
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    a {
+        color: black;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        
+    }
+
+    .button-menu-toggle {
+        display: none;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    /* Ajuste de contenido principal */
+    main {
+        margin-left: 220px;
+         /* Ajustar el margen izquierdo para dar espacio al menú lateral */
+    }
+    .ima {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: green;
+        padding: 20px;
+    }
+
+    .ima img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .servicios{
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+    .servicios li {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        max-width: none; /* Eliminar el ancho máximo para que se ajuste al contenedor */
+        margin-bottom: 20px;
+       
+    }
+
+    .servicios img {
+        max-width: 400px;
+        height: auto;
+    }
+    #contacto {
+        width: 70%;
+        margin: 0 auto;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    /* Estilos para celular */
+    
+    .container-nav {
+        
+        flex-direction: row;
+        padding-right: 20px;
+        
+    }
+
+    .navbar {
+     
+        height: auto;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        list-style-type: none;
+    }
+    .nav-links.navbar-responsive {
+        
+        position:fixed;
+        display: flex;
+        background-color: rgba(85, 89, 85, 0.95);
+        width: 50%;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 20px;
+        align-items: center;
+        gap:70px;
+        font-size: 20px;
+        z-index: 1000;
+        }
+
+    .button-menu-toggle {
+
+        
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        position:fixed relative;
+        
+    }
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    ul li:hover a{
+        color: black;
+    }
+    .section3{
+        max-width: 80%; /* Ancho máximo de la section3 */
+        margin: 0 auto; /* Centrar la section3 */
+        text-align: center; /* Alinear el texto al centro */
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    .footer-info {
+        order: 1; /* Cambiar el orden en dispositivos móviles */
+    }
+
+    .footer-social {
+        order: 3; /* Cambiar el orden en dispositivos móviles */
+    }
+
+    .social-btn,
+    .btn-map {
+        order: 2;
+    }
+    .ima img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .servicios li {
+        width: 100%; /* Ancho completo para que los elementos se apilen verticalmente */
+        max-width: 300px; /* Máximo ancho para evitar que se estiren demasiado en pantallas grandes */
+    }
+
+    .servicios img {
+        width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+    }
+    #contacto {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

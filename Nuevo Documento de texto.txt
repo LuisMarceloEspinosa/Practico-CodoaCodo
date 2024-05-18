@@ -1,0 +1,76 @@
+
+
+
+---Título del proyecto
+*
+Indique un título que represente a su proyecto (nombre del producto, marca, etc).
+
+
+----Temática
+*
+Indique en no más de 140 caracteres la temática de su trabajo.
+
+
+----Link del TPO online
+*
+URL a una web navegable para poder ver el proyecto en funcionamiento (Github Pages, Netlify o similar).
+Importante: Verificar en un navegador que la URL funcione correctamente.
+
+
+----Link a carpeta de GitHub o similar con los archivos del TPO
+*
+La carpeta no debe ser privada y contendrá todos los archivos involucrados en el TPO.
+
+
+----¿Qué tipo de sitio Web realizaron?
+*
+SPA: Simple Page Application (una página con secciones).
+MPA: Multi Page Application (varias páginas).
+
+
+----Sobre la validación del formulario en JS...
+*
+Pudimos hacerla, y colocamos el código en un archivo JS aparte.
+Pudimos hacerla, y colocamos el código dentro de la etiqueta <script> en la página del formulario.
+No pudimos hacerla.
+
+
+----En caso de haber realizado la validación del formulario, describa brevemente qué datos valida y de qué modo
+
+
+----¿En qué página/s utilizaron iframes?
+*
+
+
+----¿En qué página/s utilizaron íconos (FontAwesome, Flaticon u otros)?
+*
+
+
+----¿Qué tipos de Fuentes utilizaron?
+*
+Fuentes Locales.
+Google Fonts.
+Ambas.
+
+
+----¿Qué páginas son responsivas? Indicar nombre o "todas"
+*
+
+
+----¿En qué página/s utilizaron al menos una animación, transformación o transición?. Describirla brevemente.
+*
+
+
+----¿Qué tecnología utilizaron para maquetar?
+*
+Flexbox
+Grid
+Ambas
+No pudimos realizar el maquetado
+
+
+----¿Qué páginas fueron maquetadas? Indicar nombre o "todas". En caso de no haber maquetado escribir un "-"
+*
+
+
+----Comentarios adicionales que consideren importantes sobre la entrega del TPO (opcional)
