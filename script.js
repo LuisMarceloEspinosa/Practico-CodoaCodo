@@ -20,13 +20,12 @@ function validarFormulario(event) {
   }
 
   alert('Mensaje enviado exitosamente');
-  document.getElementById('formulario-contacto').reset(); // Limpiar el formulario después de enviarlo
+  document.getElementById('formulario-contacto').reset(); 
   return true;
 }
-// Obtener referencia al botón scroll-top-btn
+
 const scrollTopButton = document.getElementById('btn-scroll-top');
 
-// Función para mostrar u ocultar el botón dependiendo de la posición de desplazamiento
 function toggleScrollTopButton() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollTopButton.style.display = "block";
@@ -35,7 +34,6 @@ function toggleScrollTopButton() {
   }
 }
 
-// Función para desplazarse suavemente al inicio de la página al hacer clic en el botón
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -43,10 +41,8 @@ function scrollToTop() {
   });
 }
 
-// Agregar evento de clic al botón para desplazarse al inicio
 scrollTopButton.addEventListener('click', scrollToTop);
 
-// Agregar evento de desplazamiento para mostrar u ocultar el botón
 window.onscroll = function () {
   toggleScrollTopButton();
 };
